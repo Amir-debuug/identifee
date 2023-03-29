@@ -1,0 +1,30 @@
+{% layout "base" %}
+{% block content %}
+
+<p>New changes to your deal: <a href="{{ url }}">{{ name }}</a></p>
+
+{% for updateEntry in updates %}
+<blockquote>
+    {% assign key = updateEntry[0] %}
+    {% assign update = updateEntry[1] %}
+
+    <strong class="text-black">
+        {{ update.displayValue }}
+    </strong><br/>
+    {% if key == "amount" %}
+        {% if update.fromDisplayValue != "" %}<span style="color: #FF4952;">{{ update.fromDisplayValue }}</span> ➝ {% endif %}
+        {% if update.toDisplayValue != "" %}<span style="color: #34d058;">{{ update.toDisplayValue }}</span>{% endif %}
+    {% elsif key == "deal_type" %}
+        {% if update.fromDisplayValue != "" %}<span style="text-transform: uppercase;">{{ update.fromDisplayValue }}</span> ➝ {% endif %}
+        {% if update.toDisplayValue != "" %}<span style="text-transform: uppercase;">{{ update.toDisplayValue }}</span>{% endif %}
+    {% else %}
+        {% if update.fromDisplayValue != "" %}<span style="color: #000;">{{ update.fromDisplayValue }}</span> ➝ {% endif %}
+        {% if update.toDisplayValue != "" %}<span style="color: #000;">{{ update.toDisplayValue }}</span>{% endif %}
+    {% endif %}
+</blockquote>
+{% endfor %}
+<br/>
+
+<a href="{{ url }}" class="button button-primary button-large">Go to Deal</a>
+
+{% endblock %}

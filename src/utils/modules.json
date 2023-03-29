@@ -1,0 +1,198 @@
+{
+  "modulesList": [
+    {
+      "name": "activities",
+      "label": "Activities",
+      "isChecked": false
+    },
+    {
+      "name": "business_intelligence",
+      "label": "Business Intelligence",
+      "isChecked": false
+    },
+    {
+      "name": "client_portal",
+      "label": "Client Portal",
+      "isChecked": false
+    },
+    {
+      "name": "training",
+      "label": "Training",
+      "isChecked": false
+    },
+    {
+      "name": "insights",
+      "label": "Insights",
+      "isChecked": false
+    },
+    {
+      "name": "crm",
+      "label": "CRM",
+      "isChecked": false,
+      "group": [
+        {
+          "name": "deals",
+          "collection": "crm",
+          "label": "Deals",
+          "isChecked": false
+        },
+        {
+          "name": "contacts",
+          "collection": "crm",
+          "label": "Contacts",
+          "isChecked": false
+        },
+        {
+          "name": "companies",
+          "collection": "crm",
+          "label": "Companies",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "name": "resources",
+      "label": "Resources",
+      "isChecked": false,
+      "group": [
+        {
+          "name": "resources_export",
+          "collection": "resources",
+          "label": "Resources Export",
+          "isChecked": false
+        },
+        {
+          "name": "resources_import",
+          "collection": "resources",
+          "label": "Resources Import",
+          "isChecked": false
+        }
+      ]
+    },
+
+    {
+      "name": "settings",
+      "label": "Settings",
+      "isChecked": false,
+      "group": [
+        {
+          "name": "setting_profile",
+          "collection": "settings",
+          "label": "Settings Profile",
+          "isChecked": false
+        },
+        {
+          "name": "setting_security",
+          "collection": "settings",
+          "label": "Settings Security",
+          "isChecked": false
+        },
+        {
+          "name": "setting_integrations",
+          "collection": "settings",
+          "label": "Settings Integrations",
+          "isChecked": false
+        },
+        {
+          "name": "setting_notifications",
+          "collection": "settings",
+          "label": "Settings Notifications",
+          "isChecked": false
+        },
+        {
+          "name": "setting_training",
+          "collection": "settings",
+          "label": "Settings Training",
+          "isChecked": false
+        },
+        {
+          "name": "setting_branding",
+          "collection": "settings",
+          "label": "Settings Branding",
+          "isChecked": false
+        },
+        {
+          "name": "setting_manage_users",
+          "collection": "settings",
+          "label": "Settings Manage Users",
+          "isChecked": false
+        },
+        {
+          "name": "setting_pipeline_stages",
+          "collection": "settings",
+          "label": "Settings Pipelines and Stage",
+          "isChecked": false
+        },
+        {
+          "name": "setting_fields",
+          "collection": "settings",
+          "label": "Setting Fields",
+          "isChecked": false
+        },
+        {
+          "name": "setting_products",
+          "collection": "settings",
+          "label": "Setting Products",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "name": "Dashboards",
+      "label": "Dashboards",
+      "isChecked": false,
+      "group": [
+        {
+          "name": "Dashboard_Overview",
+          "collection": "dashboards",
+          "label": "Dashboard Overview",
+          "isChecked": false
+        },
+        {
+          "name": "Dashboard_Portfolio",
+          "collection": "dashboards",
+          "label": "Dashboard Portfolio",
+          "isChecked": false
+        },
+        {
+          "name": "Dashboard_Deal",
+          "collection": "dashboards",
+          "label": "Dashboard Deal",
+          "isChecked": false
+        },
+        {
+          "name": "Dashboard_Training",
+          "collection": "dashboards",
+          "label": "Dashboard Training",
+          "isChecked": false
+        },
+        {
+          "name": "Dashboard_Activities",
+          "collection": "dashboards",
+          "label": "Dashboard Activities",
+          "isChecked": false
+        }
+      ]
+    }
+  ],
+  "resources_Modules": ["resources_export", "resources_import"],
+  "crm_Modules": ["deals", "contacts", "companies"],
+  "settings_Modules": [
+    "setting_profile",
+    "setting_security",
+    "setting_integrations",
+    "setting_notifications",
+    "setting_training",
+    "setting_branding",
+    "setting_manage_users",
+    "setting_pipeline_stages",
+    "setting_fields"
+  ],
+  "dashboards_Modules": [
+    "Dashboard_Overview",
+    "Dashboard_Portfolio",
+    "Dashboard_Deal",
+    "Dashboard_Activities",
+    "Dashboard_Training"
+  ]
+}

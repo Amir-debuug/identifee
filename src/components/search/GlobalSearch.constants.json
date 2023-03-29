@@ -1,0 +1,69 @@
+{
+  "optionsList": [
+    {
+      "name": "all",
+      "label": "All",
+      "icon": "dashboard",
+      "permission": { "collection": "dashboard", "action": "view" },
+      "module": "All"
+    },
+    {
+      "name": "contacts",
+      "label": "Contacts",
+      "icon": "people_outline",
+      "permission": { "collection": "contacts", "action": "view" },
+      "type": "contact",
+      "module": "contacts"
+    },
+    {
+      "name": "companies",
+      "label": "Companies",
+      "icon": "corporate_fare",
+      "permission": { "collection": "contacts", "action": "view" },
+      "type": "organization",
+      "module": "companies"
+    },
+    {
+      "name": "deals",
+      "label": "Deals",
+      "icon": "monetization_on",
+      "permission": { "collection": "deals", "action": "view" },
+      "type": "deal",
+      "module": "deals"
+    },
+    {
+      "name": "activities",
+      "label": "Activities",
+      "icon": "event",
+      "permission": { "collection": "activities", "action": "view" },
+      "type": "activity",
+      "module": "activities"
+    },
+    {
+      "name": "files",
+      "label": "Files",
+      "icon": "attachment",
+      "permission": { "collection": "contacts", "action": "view" },
+      "type": "file",
+      "module": "crm"
+    },
+    {
+      "name": "training",
+      "label": "Training",
+      "icon": "school",
+      "permission": { "collection": "lessons", "action": "view" },
+      "type": "training",
+      "module": "training"
+    }
+  ],
+  "mainIconsList": {
+    "contact": "people_outline",
+    "deal": "monetization_on",
+    "organization": "corporate_fare",
+    "course": "school",
+    "lesson": "menu_book",
+    "category": "list_alt",
+    "activity": "calendar_today",
+    "file": "attachment"
+  }
+}

@@ -1,0 +1,30 @@
+{% layout "base" %}
+{% block content %}
+
+<p>An activity has been requested for your organization: <a href="{{ organization.url }}">{{ organization.name }}</a></p>
+
+The following day(s) have been requested:
+
+<ul>
+{% for day in activityRequest.availability.days %}
+  <li>
+    <blockquote>
+      {{ day }}
+    </blockquote>
+  </li>
+{% endfor %}
+</ul>
+
+The following time period(s) have been requested:
+
+<ul>
+{% for timePeriod in activityRequest.availability.timePeriods %}
+  <li>
+    <blockquote>
+      {{ timePeriod }}
+    </blockquote>
+  </li>
+{% endfor %}
+</ul>
+
+{% endblock %}

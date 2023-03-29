@@ -1,0 +1,24 @@
+{% layout "base" %}
+{% block content %}
+
+<p>
+  You've been invited to one or more organizations. Please select the one you would like to access below:
+</p>
+
+{% for organization in organizations %}
+  <blockquote>
+    <strong class="text-block">
+      {{ organization.name }}
+    </strong>
+    <br/>
+    <a href={{ organization.url }}>
+      Go to the Organization
+    </a>
+  </blockquote>
+{% endfor %}
+
+<p>
+  If you don't want to access the organization(s) or didn't request this, just ignore and delete this message. To keep your information secure, please don't forward this email to anyone.
+</p>
+
+{% endblock %}
